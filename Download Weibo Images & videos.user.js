@@ -169,28 +169,28 @@
     startButton.textContent = text[0];
     startButton.id = 'startButton';
     startButton.style.position = 'fixed';
-    startButton.style.top = '14rem';
-    startButton.style.left = '1rem';
-    startButton.style.zIndex = 400;
-    startButton.style.backgroundColor = 'black';
-    startButton.style.color = 'lightgray';
+    startButton.style.top = '1.1rem';
+    startButton.style.right = '3.5rem';
+    startButton.style.zIndex = 1000000;
+    startButton.style.backgroundColor = 'white';
+    startButton.style.color = '#606060';
+    startButton.style.fontSize = '0.7rem';
     startButton.style.paddingLeft = '1rem';
     startButton.style.paddingRight = '1rem';
-    startButton.style.paddingTop = '0.5rem';
-    startButton.style.paddingBottom = '0.5rem';
-    startButton.style.fontWeight = 'bold';
+    startButton.style.paddingTop = '0.2rem';
+    startButton.style.paddingBottom = '0.2rem';
     startButton.style.borderSize = '0.2rem';
     startButton.style.borderColor = 'lightgray';
-    startButton.style.borderRadius = '0.4rem';
+    startButton.style.borderRadius = '0.5rem';
     startButton.style.borderStyle = 'solid';
     startButton.addEventListener('mouseover', function(event) {
         startButton.style.backgroundColor = 'lightgray';
-        startButton.style.color = 'black';
-        startButton.style.borderColor = 'black';
+        startButton.style.color = '#606060';
+        startButton.style.borderColor = 'lightgray';
     });
     startButton.addEventListener('mouseout', function(event) {
-        startButton.style.backgroundColor = 'black';
-        startButton.style.color = 'lightgray';
+        startButton.style.backgroundColor = 'white';
+        startButton.style.color = '#606060';
         startButton.style.borderColor = 'lightgray';
     });
     startButton.addEventListener('mousedown', function(event) {
@@ -355,35 +355,34 @@
     var settingButton = document.createElement('button');
     settingButton.textContent = text[6];
     settingButton.style.position = 'fixed';
-    settingButton.style.top = '4rem';
-    settingButton.style.left = '0rem';
+    settingButton.style.top = '1.1rem';
+    settingButton.style.right = '11rem';
     settingButton.style.fontSize = '0.7rem';
-    settingButton.style.backgroundColor = 'gray';
-    settingButton.style.color = 'white';
-    settingButton.style.borderWidth = '0.2rem';
+    settingButton.style.backgroundColor = 'white';
+    settingButton.style.color = '#606060';
     settingButton.style.borderStyle = 'solid';
     settingButton.style.borderRadius = '0.5rem';
     settingButton.style.borderColor = 'lightgrey';
-    settingButton.style.zIndex = 400;
+    settingButton.style.zIndex = 1000000;
     settingButton.style.paddingLeft = '1rem';
     settingButton.style.paddingRight = '1rem';
     settingButton.style.paddingTop = '0.2rem';
     settingButton.style.paddingBottom = '0.2rem';
     settingButton.addEventListener('mouseover', function(event) {
-        settingButton.style.backgroundColor = 'darkgray';
+        settingButton.style.backgroundColor = 'lightgray';
         settingButton.style.color = 'black';
     });
     settingButton.addEventListener('mouseout', function(event) {
-        settingButton.style.backgroundColor = 'gray';
-        settingButton.style.color = 'white';
+        settingButton.style.backgroundColor = 'white';
+        settingButton.style.color = '#606060';
     });
     settingButton.addEventListener('mousedown', function(event) {
         settingButton.style.backgroundColor = 'gray';
-        settingButton.style.color = 'white';
+        settingButton.style.color = '#606060';
     });
     settingButton.addEventListener('mouseup', function(event) {
-        settingButton.style.backgroundColor = 'darkgray';
-        settingButton.style.color = 'black';
+        settingButton.style.backgroundColor = 'lightgray';
+        settingButton.style.color = '#606060';
     });
     settingButton.addEventListener('click', showModal);
     document.body.appendChild(settingButton);
