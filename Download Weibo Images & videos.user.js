@@ -21,7 +21,7 @@
 
     var text = [];
     var text_zh = [
-        '添加下载按钮',
+        '添加下载',
         '欢迎使用“下载微博图片”脚本',
         '请选择添加下载按钮的方式：',
         '点击“添加下载按钮”来添加下载按钮。',
@@ -169,9 +169,8 @@
     startButton.textContent = text[0];
     startButton.id = 'startButton';
     startButton.style.position = 'fixed';
-    startButton.style.top = '1.1rem';
-    startButton.style.right = '3.5rem';
-    startButton.style.zIndex = 1000000;
+    startButton.style.top = '4.5rem';
+    startButton.style.right = '18rem';
     startButton.style.backgroundColor = 'white';
     startButton.style.color = '#606060';
     startButton.style.fontSize = '0.7rem';
@@ -355,15 +354,14 @@
     var settingButton = document.createElement('button');
     settingButton.textContent = text[6];
     settingButton.style.position = 'fixed';
-    settingButton.style.top = '1.1rem';
-    settingButton.style.right = '11rem';
+    settingButton.style.top = '6.5rem';
+    settingButton.style.right = '18rem';
     settingButton.style.fontSize = '0.7rem';
     settingButton.style.backgroundColor = 'white';
     settingButton.style.color = '#606060';
     settingButton.style.borderStyle = 'solid';
     settingButton.style.borderRadius = '0.5rem';
     settingButton.style.borderColor = 'lightgrey';
-    settingButton.style.zIndex = 1000000;
     settingButton.style.paddingLeft = '1rem';
     settingButton.style.paddingRight = '1rem';
     settingButton.style.paddingTop = '0.2rem';
