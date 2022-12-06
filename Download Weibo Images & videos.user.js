@@ -170,7 +170,7 @@
     startButton.id = 'startButton';
     startButton.style.position = 'fixed';
     startButton.style.top = '4.5rem';
-    startButton.style.right = '18rem';
+    startButton.style.right = '14.5%';
     startButton.style.backgroundColor = 'white';
     startButton.style.color = '#606060';
     startButton.style.fontSize = '0.7rem';
@@ -353,9 +353,10 @@
 
     var settingButton = document.createElement('button');
     settingButton.textContent = text[6];
+    settingButton.id = 'settingButton';
     settingButton.style.position = 'fixed';
     settingButton.style.top = '6.5rem';
-    settingButton.style.right = '18rem';
+    settingButton.style.right = '14.5%';
     settingButton.style.fontSize = '0.7rem';
     settingButton.style.backgroundColor = 'white';
     settingButton.style.color = '#606060';
@@ -384,4 +385,8 @@
     });
     settingButton.addEventListener('click', showModal);
     document.body.appendChild(settingButton);
+
+    var style = document.createElement("style");
+    style.innerHTML = '@media screen and (max-width: 1800px) { #startButton, #settingButton { display: none; } }';
+    document.head.appendChild(style);
 })();
